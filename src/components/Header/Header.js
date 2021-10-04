@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -14,10 +15,26 @@ const Header = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href='/home'>Home</Nav.Link>
-              <Nav.Link href='/about'>Link</Nav.Link>
-              <Nav.Link href='/camps'>Link</Nav.Link>
-              <Nav.Link href='/camps'>Link</Nav.Link>
+              <Link to='/home'>
+                <Nav.Link className='nav' href='/home'>
+                  Home
+                </Nav.Link>
+              </Link>
+              <Link to='/about'>
+                <Nav.Link className='nav' href='/about'>
+                  About
+                </Nav.Link>
+              </Link>
+              <Link to='/camps'>
+                <Nav.Link className='nav' href='/camps'>
+                  Camps
+                </Nav.Link>
+              </Link>
+              <Link to='/contact'>
+                <Nav.Link className='nav' href='/contact'>
+                  Contact US
+                </Nav.Link>
+              </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
