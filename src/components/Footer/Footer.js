@@ -1,14 +1,15 @@
 import React from 'react';
-import { Col, Container, ListGroup, Nav, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Row } from 'react-bootstrap';
+import logo from '../../images/sports-logo.png';
 
 const Footer = () => {
   return (
-    <div>
+    <div className='bg-dark p-4'>
       <Row>
         <Container>
-          <div className='d-flex'>
+          <div className='d-flex justify-content-center align-items-center'>
             <Col md={4}>
-              <h1>Logo</h1>
+              <img src={logo} alt='' />
             </Col>
             <Col md={4}>
               <Nav defaultActiveKey='/home' className='flex-column'>
@@ -20,17 +21,19 @@ const Footer = () => {
             </Col>
             <Col md={4}>
               <span>
-                <i class='fab fa-facebook'></i>
+                <i class='fab fa-facebook text-white me-3 fs-3'></i>
               </span>
               <span>
-                <i class='fab fa-facebook'></i>
+                <i class='fab fa-instagram text-white me-3 fs-3'></i>
               </span>
               <span>
-                <i class='fab fa-facebook'></i>
+                <i class='fab fa-linkedin text-white me-3 fs-3'></i>
               </span>
-              <span>
-                <i class='fab fa-facebook'></i>
-              </span>
+              <p className='text-white'>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                veniam dolor vel cupiditate laudantium ut delectus sequi
+                dignissimos ex excepturi?
+              </p>
             </Col>
           </div>
         </Container>

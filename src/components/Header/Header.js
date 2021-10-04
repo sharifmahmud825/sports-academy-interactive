@@ -1,13 +1,17 @@
 import React from 'react';
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from '../../images/sports-logo.png';
+import './Header.css';
 
 const Header = () => {
   return (
     <div className='row'>
       <Navbar bg='light' expand='lg'>
         <Container fluid>
-          <Navbar.Brand href='#'>Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href='#' className='logo'>
+            <img src={logo} alt='' className='w-25 ' />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbarScroll' />
           <Navbar.Collapse id='navbarScroll'>
             <Nav

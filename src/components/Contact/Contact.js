@@ -1,9 +1,12 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Contact = () => {
   return (
     <div>
-      <h3>This is contact page</h3>
+      <Header></Header>
+      <Footer></Footer>
     </div>
   );
 };

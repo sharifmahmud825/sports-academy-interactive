@@ -1,9 +1,12 @@
 import React from 'react';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Camps = () => {
   return (
     <div>
-      <h2>this is camps</h2>
+      <Header></Header>
+      <Footer></Footer>
     </div>
   );
 };
