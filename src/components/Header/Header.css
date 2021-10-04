@@ -1,5 +1,5 @@
-.nav {
-  text-decoration: none;
+.nav a {
+  text-decoration: none !important;
 }
 .logo img {
   width: 80px;

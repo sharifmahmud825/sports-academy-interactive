@@ -8,11 +8,15 @@ import NotFound from './components/NotFound/NotFound';
 import About from './components/About/About';
 import Camps from './components/Camps/Camps';
 import Contact from './components/Contact/Contact';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className='App'>
       <Router>
+        <Header></Header>
+
         <Switch>
           <Route exact path='/'>
             <Home></Home>
@@ -33,6 +37,7 @@ function App() {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

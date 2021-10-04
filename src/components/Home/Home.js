@@ -1,4 +1,5 @@
 import React from 'react';
+import Camps from '../Camps/Camps';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
@@ -6,9 +7,8 @@ import Hero from '../Hero/Hero';
 const Home = () => {
   return (
     <div>
-      <Header></Header>
       <Hero></Hero>
-      <Footer></Footer>
+      <Camps></Camps>
     </div>
   );
 };

@@ -3,12 +3,7 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 
 const About = () => {
-  return (
-    <div>
-      <Header></Header>
-      <Footer></Footer>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default About;

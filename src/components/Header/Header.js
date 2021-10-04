@@ -15,24 +15,18 @@ const Header = () => {
           <Navbar.Toggle aria-controls='navbarScroll' />
           <Navbar.Collapse id='navbarScroll'>
             <Nav
-              className='ms-auto my-2 my-lg-0'
+              className='ms-auto my-2 my-lg-0 nav'
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
               <Link to='/home'>
-                <Nav.Link className='nav' href='/home'>
-                  Home
-                </Nav.Link>
+                <Nav.Link href='/home'>Home</Nav.Link>
               </Link>
               <Link to='/about'>
-                <Nav.Link className='nav' href='/about'>
-                  About
-                </Nav.Link>
+                <Nav.Link href='/about'>About</Nav.Link>
               </Link>
               <Link to='/camps'>
-                <Nav.Link className='nav' href='/camps'>
-                  Camps
-                </Nav.Link>
+                <Nav.Link href='/camps'>Camps</Nav.Link>
               </Link>
               <Link to='/contact'>
                 <Nav.Link className='nav' href='/contact'>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Nav, Row } from 'react-bootstrap';
 import logo from '../../images/sports-logo.png';
+import './Footer.css';
 
 const Footer = () => {
   return (
@@ -21,13 +22,13 @@ const Footer = () => {
             </Col>
             <Col md={4}>
               <span>
-                <i class='fab fa-facebook text-white me-3 fs-3'></i>
+                <i className='fab fa-facebook text-white me-3 fs-3'></i>
               </span>
               <span>
-                <i class='fab fa-instagram text-white me-3 fs-3'></i>
+                <i className='fab fa-instagram text-white me-3 fs-3 icon'></i>
               </span>
               <span>
-                <i class='fab fa-linkedin text-white me-3 fs-3'></i>
+                <i className='fab fa-linkedin text-white me-3 fs-3'></i>
               </span>
               <p className='text-white'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
