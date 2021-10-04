@@ -1,0 +1,12 @@
+.body {
+  font-family: poppins;
+}
+
+.banner {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.banner img {
+  width: 100%;
+}
