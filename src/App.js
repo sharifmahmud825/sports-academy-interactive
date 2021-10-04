@@ -10,6 +10,7 @@ import Camps from './components/Camps/Camps';
 import Contact from './components/Contact/Contact';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import CampDetails from './components/CampDetails/CampDetails';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path='/camps'>
             <Camps></Camps>
+          </Route>
+          <Route path='/camp/:campId'>
+            <CampDetails></CampDetails>
           </Route>
           <Route path='/contact'>
             <Contact></Contact>

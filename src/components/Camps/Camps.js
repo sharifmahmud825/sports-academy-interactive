@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Camp from '../Camp/Camp';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 
 const Camps = () => {
   const [camps, setCamps] = useState([]);

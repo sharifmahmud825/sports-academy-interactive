@@ -5,11 +5,11 @@ import './Hero.css';
 const Hero = () => {
   return (
     <div>
-      <Container>
-        <Row>
-          <div className='d-flex align-items-center '>
-            <Col md={6}>
-              <h1 className='text-primary text-start '>
+      <div className='container'>
+        <div className='row'>
+          <div className='col-md-6'>
+            <div className='heading'>
+              <h1 className='text-primary text-start'>
                 Join The World's most Dedicated Athletes
               </h1>
               <h6 className='text-start'>
@@ -17,13 +17,13 @@ const Hero = () => {
                 for competing with the world. We guide you to reach your goal.
                 And Be the best with us.
               </h6>
-            </Col>
-            <Col md={6}>
-              <img src={messi} alt='' />
-            </Col>
+            </div>
           </div>
-        </Row>
-      </Container>
+          <div className='col-md-6'>
+            <img src={messi} alt='' className='img-fluid' />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

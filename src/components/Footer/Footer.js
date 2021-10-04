@@ -6,39 +6,29 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className='bg-dark p-4'>
-      <Row>
-        <Container>
-          <div className='d-flex justify-content-center align-items-center'>
-            <Col md={4}>
-              <img src={logo} alt='' />
-            </Col>
-            <Col md={4}>
-              <Nav defaultActiveKey='/home' className='flex-column'>
-                <Nav.Link href='/home'>Home</Nav.Link>
-                <Nav.Link eventKey='link-1'>About</Nav.Link>
-                <Nav.Link eventKey='link-2'>Camps</Nav.Link>
-                <Nav.Link eventKey='link-3'>Contact</Nav.Link>
-              </Nav>
-            </Col>
-            <Col md={4}>
-              <span>
-                <i className='fab fa-facebook text-white me-3 fs-3'></i>
-              </span>
-              <span>
-                <i className='fab fa-instagram text-white me-3 fs-3 icon'></i>
-              </span>
-              <span>
-                <i className='fab fa-linkedin text-white me-3 fs-3'></i>
-              </span>
-              <p className='text-white'>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-                veniam dolor vel cupiditate laudantium ut delectus sequi
-                dignissimos ex excepturi?
-              </p>
-            </Col>
-          </div>
-        </Container>
-      </Row>
+      <div className='row'>
+        <div className='col-md-6'>
+          <img src={logo} alt='' />
+        </div>
+        <div className='col-md-6'>
+          <span>
+            <i className='fab fa-facebook text-primary fs-3 mt-5'></i>
+          </span>
+          <span>
+            <i className='fab fa-instagram text-primary fs-3 mt-5 ms-4'></i>
+          </span>
+          <span>
+            <i className='fab fa-linkedin text-primary fs-3 mt-5 ms-4'></i>
+          </span>
+          <p className='text-white my-3'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            quam.
+          </p>
+        </div>
+        <small className='text-white m-2'>
+          @ All rights reserved by Sharif Mahmud
+        </small>
+      </div>
     </div>
   );
 };
